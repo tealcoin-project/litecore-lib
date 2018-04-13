@@ -2,8 +2,6 @@ Bitcore Library
 =======
 
 [![NPM Package](https://img.shields.io/npm/v/litecore-tealcoin-lib.svg?style=flat-square)](https://www.npmjs.org/package/litecore-tealcoin-lib)
-[![Build Status](https://img.shields.io/travis/tealcoin-project/litecore-tealcoin-lib.svg?branch=master&style=flat-square)](https://travis-ci.org/tealcoin-project/litecore-tealcoin-lib)
-[![Coverage Status](https://img.shields.io/coveralls/tealcoin-project/litecore-tealcoin-lib.svg?style=flat-square)](https://coveralls.io/r/tealcoin-project/litecore-tealcoin-lib)
 
 A pure and powerful JavaScript Tealcoin library.
 
