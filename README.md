@@ -80,15 +80,6 @@ cd litecore-tealcoin-lib
 npm install
 ```
 
-Run all the tests:
-
-```sh
-gulp test
-```
-
-You can also run just the Node.js tests with `gulp test:node`, just the browser tests with `gulp test:browser`
-or create a test coverage report (you can open `coverage/lcov-report/index.html` to visualize it) with `gulp coverage`.
-
 ## License
 
 Code released under [the MIT license](https://github.com/tealcoin-project/litecore-tealcoin-lib/blob/master/LICENSE).
