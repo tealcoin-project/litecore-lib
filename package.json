@@ -1,19 +1,19 @@
 {
-  "name": "litecore-lib",
-  "version": "0.13.21",
-  "description": "A pure and powerful JavaScript Litecoin library.",
-  "author": "BitPay <dev@bitpay.com>",
+  "name": "litecore-tealcoin-lib",
+  "version": "0.13.22",
+  "description": "A pure and powerful JavaScript Tealcoin library.",
+  "author": {
+    "name": "BitPay",
+    "email": "dev@bitpay.com"
+  },
   "main": "index.js",
   "scripts": {
-    "lint": "gulp lint",
-    "test": "gulp test",
-    "coverage": "gulp coverage",
-    "build": "gulp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "contributors": [
     {
       "name": "Charlie Lee",
-      "email": "coblee@litecoin.org"
+      "email": "coblee@tealcoin.org"
     },
     {
       "name": "Daniel Cousens",
@@ -61,7 +61,7 @@
     }
   ],
   "keywords": [
-    "litecoin",
+    "tealcoin",
     "bitcoin",
     "transaction",
     "address",
@@ -79,7 +79,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/litecoin-project/litecore-lib.git"
+    "url": "git+https://github.com/tealcoin-project/litecore-tealcoin-lib.git"
   },
   "browser": {
     "request": "browser-request"
@@ -97,8 +97,28 @@
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.9.1",
-    "litecore-build": "litecoin-project/litecore-build",
+    "litecore-build": "github:tealcoin-project/litecore-build",
     "sinon": "^1.13.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/litecoin-project/litecore-lib/issues"
+  },
+  "homepage": "https://github.com/tealcoin-project/litecore-tealcoin-lib#readme",
+  "maintainers": [
+    {
+      "name": "coblee",
+      "email": "coblee@tealcoin.org"
+    },
+    {
+      "name": "losh11",
+      "email": "loshan1212@gmail.com"
+    },
+    {
+      "name": "qxchan",
+      "email": "tealcoin.project@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/litecore-tealcoin-lib/-/litecore-tealcoin-lib-0.13.22.tgz"
 }

@@ -1,4 +1,4 @@
-# Litecore examples
+# Bitcore examples
 
 ## Generate a random address
 ```javascript
@@ -42,7 +42,7 @@ var transaction = new litecore.Transaction()
 
 ## Sign a Bitcoin message
 ```javascript
-var Message = require('litecore-message');
+var Message = require('litecore-tealcoin-message');
 
 var privateKey = new litecore.PrivateKey('L23PpjkBQqpAF4vbMHNfTZAb3KFPBSawQ7KinFTzz7dxq6TZX8UA');
 var message = new Message('This is an example of a signed message.');
@@ -52,7 +52,7 @@ var signature = message.sign(privateKey);
 
 ## Verify a Bitcoin message
 ```javascript
-var Message = require('litecore-message');
+var Message = require('litecore-tealcoin-message');
 
 var address = '13Js7D3q4KvfSqgKN8LpNq57gcahrVc5JZ';
 var signature = 'IBOvIfsAs/da1e36W8kw1cQOPqPVXCW5zJgNQ5kI8m57FycZXdeFmeyoIqJSREzE4W7vfDmdmPk0HokuJPvgPPE=';

@@ -2,7 +2,7 @@
 
 ## Principles
 
-Litecoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Litecoin network allows for highly resilient litecoin infrastructure, and the developer community needs reliable, open-source tools to implement litecoin apps and services. Litecore provides a reliable API for JavaScript apps that need to interface with Litecoin.
+Tealcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Tealcoin network allows for highly resilient tealcoin infrastructure, and the developer community needs reliable, open-source tools to implement tealcoin apps and services. Bitcore provides a reliable API for JavaScript apps that need to interface with Tealcoin.
 
 To get started, just `npm install litecore` or `bower install litecore`.
 
@@ -36,7 +36,7 @@ To get started, just `npm install litecore` or `bower install litecore`.
 Some functionality is implemented as a module that can be installed separately:
 
 * [Payment Protocol Support](https://github.com/bitpay/bitcore-payment-protocol)
-* [Peer to Peer Networking](https://github.com/litecoin-project/litecore-p2p)
+* [Peer to Peer Networking](https://github.com/tealcoin-project/litecore-p2p)
 * [Bitcoin Core JSON-RPC](https://github.com/bitpay/bitcoind-rpc)
 * [Payment Channels](https://github.com/bitpay/bitcore-channel)
 * [Mnemonics](https://github.com/bitpay/bitcore-mnemonic)
