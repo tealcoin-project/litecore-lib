@@ -17,10 +17,6 @@ Tealcoin is a powerful new peer-to-peer platform for the next generation of fina
 npm install litecore-tealcoin-lib
 ```
 
-```
-bower install litecore-tealcoin-lib
-```
-
 ## Documentation
 
 The complete docs are hosted here: [litecore documentation](http://litecore.io/guide/). There's also a [litecore API reference](http://litecore.io/api/) available generated from the JSDocs of the project, where you'll find low-level details on each litecore utility.
@@ -58,19 +54,15 @@ Please send pull requests for bug fixes, code optimization, and ideas for improv
 To build a litecore-tealcoin-lib full bundle for the browser:
 
 ```sh
-gulp browser
+npm install --global broserify
+npm install --global uglify-js
+
+cd litecore-tealcoin-lib
+browserify --require ./index.js > litecore-tealcoin-lib.js
+uglifyjs --compress --mangle --rename litecore-tealcoin-lib.js > litecore-tealcoin-lib.min.js
 ```
 
 This will generate files named `litecore-tealcoin-lib.js` and `litecore-tealcoin-lib.min.js`.
-
-You can also use our pre-generated files, provided for each release along with a PGP signature by one of the project's maintainers. To get them, checkout a release commit (for example, https://github.com/bitpay/bitcore-lib/commit/e33b6e3ba6a1e5830a079e02d949fce69ea33546 for v0.12.6).
-
-To verify signatures, use the following PGP keys:
-- @braydonf: https://pgp.mit.edu/pks/lookup?op=get&search=0x9BBF07CAC07A276D `D909 EFE6 70B5 F6CC 89A3 607A 9BBF 07CA C07A 276D`
-- @gabegattis: https://pgp.mit.edu/pks/lookup?op=get&search=0x441430987182732C `F3EA 8E28 29B4 EC93 88CB  B0AA 4414 3098 7182 732C`
-- @kleetus: https://pgp.mit.edu/pks/lookup?op=get&search=0x33195D27EF6BDB7F `F8B0 891C C459 C197 65C2 5043 3319 5D27 EF6B DB7F`
-- @matiu: https://pgp.mit.edu/pks/lookup?op=get&search=0x9EDE6DE4DE531FAC `25CE ED88 A1B1 0CD1 12CD  4121 9EDE 6DE4 DE53 1FAC`
-
 
 ## Development & Tests
 
