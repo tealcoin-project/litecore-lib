@@ -1,52 +1,11 @@
 # Browser Builds
 Bitcore and most official submodules work in the browser, thanks to [browserify](http://browserify.org/) (some modules are not fully compatible with web browsers).
 
-The easiest and recommended way to use them, is via [Bower](http://bower.io/), a browser package manager, and get the release bundles. For example, when building an app that uses `litecore` and `bitcore-mnemonic`, you do:
+The easiest and recommended way to use them, is via [Bower](http://bower.io/), a browser package manager, and get the release bundles. For example, when building an app that uses `litecore` and `tealcoin-mnemonic`, you do:
 
 ```sh
-bower install litecore-tealcoin-lib
-bower install bitcore-mnemonic
-```
-
-You can also use a `bower.json` file to store the dependencies of your project:
-
-```json
-{
-  "name": "Your app name",
-  "version": "0.0.1",
-  "license": "MIT",
-  "dependencies": {
-    "litecore-tealcoin-lib": "^0.13.7",
-    "bitcore-mnemonic": "^1.0.1"
-  }
-}
-```
-
-and run `bower install` to install the dependencies.
-
-After this, you can include the bundled release versions in your HTML file:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <script src="bower_components/litecore/litecore-tealcoin-lib.min.js"></script>
-  <script src="bower_components/bitcore-mnemonic/bitcore-mnemonic.min.js"></script>
-</head>
-
-<body>
-
-  <script type="text/javascript">
-    var litecore = require('litecore-tealcoin-lib');
-    var Mnemonic = require('bitcore-mnemonic');
-    // etc...
-  </script>
-
-</body>
-
-</html>
+npm install litecore-tealcoin-lib
+npm install tealcoin-mnemonic
 ```
 
 ## Building Custom Bundles
@@ -57,10 +16,32 @@ browserify --require ./index.js:litecore-tealcoin-lib | uglifyjs > litecore-teal
 ```
 
 ```sh
-browserify --require ./index.js:bitcore-mnemonic --external litecore-tealcoin-lib | uglifyjs > bitcore-mnemonic.min.js
+browserify --require ./index.js:tealcoin-mnemonic --external litecore-tealcoin-lib | uglifyjs > tealcoin-mnemonic.min.js
 ```
 
-In many of the modules you can also run the command to build a browser bundle:
-```sh
-gulp browser
+## Test in html file
+After this, you can include the bundled release versions in your HTML file:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script src="bower_components/litecore/litecore-tealcoin-lib.min.js"></script>
+  <script src="bower_components/tealcoin-mnemonic/tealcoin-mnemonic.min.js"></script>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    var litecore = require('litecore-tealcoin-lib');
+    var Mnemonic = require('tealcoin-mnemonic');
+    // etc...
+  </script>
+
+</body>
+
+</html>
 ```
+
