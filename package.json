@@ -1,6 +1,6 @@
 {
   "name": "litecore-tealcoin-lib",
-  "version": "0.13.28",
+  "version": "0.13.29",
   "description": "A pure and powerful JavaScript Tealcoin library.",
   "author": {
     "name": "BitPay",

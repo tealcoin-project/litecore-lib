@@ -56,6 +56,7 @@ To build a litecore-tealcoin-lib full bundle for the browser:
 ```sh
 npm install --global broserify
 npm install --global uglify-js
+npm install litecore-tealcoin-lib
 
 cd litecore-tealcoin-lib
 browserify --require ./index.js:litecore-tealcoin-lib > litecore-tealcoin-lib.js
