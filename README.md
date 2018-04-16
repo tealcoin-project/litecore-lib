@@ -58,7 +58,7 @@ npm install --global broserify
 npm install --global uglify-js
 
 cd litecore-tealcoin-lib
-browserify --require ./index.js > litecore-tealcoin-lib.js
+browserify --require ./index.js:litecore-tealcoin-lib > litecore-tealcoin-lib.js
 uglifyjs --compress --mangle --rename litecore-tealcoin-lib.js > litecore-tealcoin-lib.min.js
 ```
 
